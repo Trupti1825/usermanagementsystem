@@ -1,0 +1,27 @@
+Task 2
+1.
+CREATE TABLE users (
+    _id INT PRIMARY KEY,
+    username VARCHAR(255),
+    name VARCHAR(255)
+);
+
+INSERT INTO users (_id, username, name) VALUES
+(1, 'user1', 'John Doe'),
+(2, 'user2', 'Jane Smith'),
+(3, 'user3', 'Bob Johnson');
+
+
+2.CREATE TABLE posts (
+    _id INT PRIMARY KEY,
+    user_id INT,
+    title VARCHAR(255),
+    content TEXT
+);
+
+INSERT INTO posts (_id, user_id, title, content) VALUES
+(101, 1, 'Post 1', 'Lorem ipsum 1'),
+(102, 1, 'Post 2', 'Lorem ipsum 2'),
+(103, 2, 'Post 3', 'Lorem ipsum 3');
+
+

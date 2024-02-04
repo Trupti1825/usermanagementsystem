@@ -112,7 +112,7 @@ public class UserController {
     @PostMapping("/search")
     public ResponseEntity<Page<User>>searchUsers(@RequestBody User searchQuery,
                                                  @RequestParam(defaultValue = "0") int page,
-                                                 @RequestParam(defaultValue = "10") int size){
+                                                 @RequestParam(defaultValue = "1") int size){
         Page<User> users = userRepository.findAll(
                 Example.of(searchQuery),
                 PageRequest.of(page,size)
